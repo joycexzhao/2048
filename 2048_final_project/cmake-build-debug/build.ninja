@@ -1,0 +1,958 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: game
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/zhao/Desktop/211$ C++/2048_final_project/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target game
+
+
+#############################################
+# Order-only phony target for game
+
+build cmake_object_order_depends_target_game: phony || cmake_object_order_depends_target_ge211
+
+build CMakeFiles/game.dir/src/model.cxx.o: CXX_COMPILER__game_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/src/model.cxx || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles/game.dir/src/model.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/src" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = CMakeFiles/game.dir
+  OBJECT_FILE_DIR = CMakeFiles/game.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/game.dir/
+  TARGET_PDB = game.pdb
+
+build CMakeFiles/game.dir/src/view.cxx.o: CXX_COMPILER__game_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/src/view.cxx || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles/game.dir/src/view.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/src" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = CMakeFiles/game.dir
+  OBJECT_FILE_DIR = CMakeFiles/game.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/game.dir/
+  TARGET_PDB = game.pdb
+
+build CMakeFiles/game.dir/src/controller.cxx.o: CXX_COMPILER__game_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/src/controller.cxx || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles/game.dir/src/controller.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/src" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = CMakeFiles/game.dir
+  OBJECT_FILE_DIR = CMakeFiles/game.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/game.dir/
+  TARGET_PDB = game.pdb
+
+build CMakeFiles/game.dir/src/main.cxx.o: CXX_COMPILER__game_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/src/main.cxx || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles/game.dir/src/main.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/src" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = CMakeFiles/game.dir
+  OBJECT_FILE_DIR = CMakeFiles/game.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/game.dir/
+  TARGET_PDB = game.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target game
+
+
+#############################################
+# Link the executable game
+
+build game: CXX_EXECUTABLE_LINKER__game_Debug CMakeFiles/game.dir/src/model.cxx.o CMakeFiles/game.dir/src/view.cxx.o CMakeFiles/game.dir/src/controller.cxx.o CMakeFiles/game.dir/src/main.cxx.o | .cs211/lib/ge211/src/libge211.a /opt/homebrew/lib/libSDL2.dylib /opt/homebrew/lib/libSDL2_image.dylib /opt/homebrew/lib/libSDL2_mixer.dylib /opt/homebrew/lib/libSDL2_ttf.dylib || .cs211/lib/ge211/src/libge211.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
+  LINK_FLAGS = -fsanitize=undefined
+  LINK_LIBRARIES = .cs211/lib/ge211/src/libge211.a  /opt/homebrew/lib/libSDL2.dylib  -framework Cocoa  /opt/homebrew/lib/libSDL2_image.dylib  /opt/homebrew/lib/libSDL2_mixer.dylib  /opt/homebrew/lib/libSDL2_ttf.dylib
+  OBJECT_DIR = CMakeFiles/game.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/game.dir/
+  TARGET_FILE = game
+  TARGET_PDB = game.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target model_test
+
+
+#############################################
+# Order-only phony target for model_test
+
+build cmake_object_order_depends_target_model_test: phony || cmake_object_order_depends_target_catch cmake_object_order_depends_target_ge211
+
+build CMakeFiles/model_test.dir/src/model.cxx.o: CXX_COMPILER__model_test_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/src/model.cxx || cmake_object_order_depends_target_model_test
+  DEFINES = -DCS211_TESTING
+  DEP_FILE = CMakeFiles/model_test.dir/src/model.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/src" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/catch/include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = CMakeFiles/model_test.dir
+  OBJECT_FILE_DIR = CMakeFiles/model_test.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/model_test.dir/
+  TARGET_PDB = model_test.pdb
+
+build CMakeFiles/model_test.dir/test/model_test.cxx.o: CXX_COMPILER__model_test_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/test/model_test.cxx || cmake_object_order_depends_target_model_test
+  DEFINES = -DCS211_TESTING
+  DEP_FILE = CMakeFiles/model_test.dir/test/model_test.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wcast-qual -Wdangling-else -Wnull-dereference -Wtype-limits -Wwrite-strings -Werror=bool-operation -Werror=int-to-pointer-cast -Werror=return-type -Werror=uninitialized -fsanitize=undefined -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/src" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/catch/include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = CMakeFiles/model_test.dir
+  OBJECT_FILE_DIR = CMakeFiles/model_test.dir/test
+  TARGET_COMPILE_PDB = CMakeFiles/model_test.dir/
+  TARGET_PDB = model_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target model_test
+
+
+#############################################
+# Link the executable model_test
+
+build model_test: CXX_EXECUTABLE_LINKER__model_test_Debug CMakeFiles/model_test.dir/src/model.cxx.o CMakeFiles/model_test.dir/test/model_test.cxx.o | .cs211/lib/catch/libcatch.a .cs211/lib/ge211/src/libge211.a /opt/homebrew/lib/libSDL2.dylib /opt/homebrew/lib/libSDL2_image.dylib /opt/homebrew/lib/libSDL2_mixer.dylib /opt/homebrew/lib/libSDL2_ttf.dylib || .cs211/lib/catch/libcatch.a .cs211/lib/ge211/src/libge211.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
+  LINK_FLAGS = -fsanitize=undefined
+  LINK_LIBRARIES = .cs211/lib/catch/libcatch.a  .cs211/lib/ge211/src/libge211.a  /opt/homebrew/lib/libSDL2.dylib  -framework Cocoa  /opt/homebrew/lib/libSDL2_image.dylib  /opt/homebrew/lib/libSDL2_mixer.dylib  /opt/homebrew/lib/libSDL2_ttf.dylib
+  OBJECT_DIR = CMakeFiles/model_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/model_test.dir/
+  TARGET_FILE = model_test
+  TARGET_PDB = model_test.pdb
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/zhao/Desktop/211 C++/2048_final_project" -B"/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/zhao/Desktop/211 C++/2048_final_project/.cs211/cmake/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target catch
+
+
+#############################################
+# Order-only phony target for catch
+
+build cmake_object_order_depends_target_catch: phony || .cs211/lib/catch/CMakeFiles/catch.dir
+
+build .cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o: CXX_COMPILER__catch_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/catch/src/catch.cxx || cmake_object_order_depends_target_catch
+  DEP_FILE = .cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/catch/include"
+  OBJECT_DIR = .cs211/lib/catch/CMakeFiles/catch.dir
+  OBJECT_FILE_DIR = .cs211/lib/catch/CMakeFiles/catch.dir/src
+  TARGET_COMPILE_PDB = .cs211/lib/catch/CMakeFiles/catch.dir/catch.pdb
+  TARGET_PDB = .cs211/lib/catch/libcatch.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target catch
+
+
+#############################################
+# Link the static library .cs211/lib/catch/libcatch.a
+
+build .cs211/lib/catch/libcatch.a: CXX_STATIC_LIBRARY_LINKER__catch_Debug .cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = .cs211/lib/catch/CMakeFiles/catch.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = .cs211/lib/catch/CMakeFiles/catch.dir/catch.pdb
+  TARGET_FILE = .cs211/lib/catch/libcatch.a
+  TARGET_PDB = .cs211/lib/catch/libcatch.pdb
+
+
+#############################################
+# Utility command for test
+
+build .cs211/lib/catch/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build .cs211/lib/catch/test: phony .cs211/lib/catch/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build .cs211/lib/catch/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build .cs211/lib/catch/edit_cache: phony .cs211/lib/catch/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build .cs211/lib/catch/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/zhao/Desktop/211 C++/2048_final_project" -B"/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build .cs211/lib/catch/rebuild_cache: phony .cs211/lib/catch/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build .cs211/lib/catch/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build .cs211/lib/catch/CMakeFiles/install.util: CUSTOM_COMMAND .cs211/lib/catch/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build .cs211/lib/catch/install: phony .cs211/lib/catch/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build .cs211/lib/catch/CMakeFiles/install/local.util: CUSTOM_COMMAND .cs211/lib/catch/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build .cs211/lib/catch/install/local: phony .cs211/lib/catch/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build .cs211/lib/catch/CMakeFiles/install/strip.util: CUSTOM_COMMAND .cs211/lib/catch/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build .cs211/lib/catch/install/strip: phony .cs211/lib/catch/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/zhao/Desktop/211 C++/2048_final_project/.cs211/cmake/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build .cs211/lib/ge211/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/test: phony .cs211/lib/ge211/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build .cs211/lib/ge211/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build .cs211/lib/ge211/edit_cache: phony .cs211/lib/ge211/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build .cs211/lib/ge211/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/zhao/Desktop/211 C++/2048_final_project" -B"/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/rebuild_cache: phony .cs211/lib/ge211/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build .cs211/lib/ge211/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build .cs211/lib/ge211/CMakeFiles/install.util: CUSTOM_COMMAND .cs211/lib/ge211/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/install: phony .cs211/lib/ge211/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build .cs211/lib/ge211/CMakeFiles/install/local.util: CUSTOM_COMMAND .cs211/lib/ge211/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/install/local: phony .cs211/lib/ge211/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build .cs211/lib/ge211/CMakeFiles/install/strip.util: CUSTOM_COMMAND .cs211/lib/ge211/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/install/strip: phony .cs211/lib/ge211/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/test: phony .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/edit_cache: phony .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/zhao/Desktop/211 C++/2048_final_project" -B"/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/rebuild_cache: phony .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/install.util: CUSTOM_COMMAND .cs211/lib/ge211/3rdparty/utf8-cpp/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/install: phony .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/install/local.util: CUSTOM_COMMAND .cs211/lib/ge211/3rdparty/utf8-cpp/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/install/local: phony .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/install/strip.util: CUSTOM_COMMAND .cs211/lib/ge211/3rdparty/utf8-cpp/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/install/strip: phony .cs211/lib/ge211/3rdparty/utf8-cpp/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ge211
+
+
+#############################################
+# Order-only phony target for ge211
+
+build cmake_object_order_depends_target_ge211: phony || .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_base.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_color.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_engine.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_event.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_error.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_geometry.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_audio.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_random.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_render.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_resource.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_session.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_sprites.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+build .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.o: CXX_COMPILER__ge211_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/src/ge211_window.cxx || cmake_object_order_depends_target_ge211
+  DEFINES = -DGE211_RESOURCES="\"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
+  DEP_FILE = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wextra -pedantic -std=c++14
+  INCLUDES = -I"/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -I/opt/homebrew/include/SDL2 -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ge211
+
+
+#############################################
+# Link the static library .cs211/lib/ge211/src/libge211.a
+
+build .cs211/lib/ge211/src/libge211.a: CXX_STATIC_LIBRARY_LINKER__ge211_Debug .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.o .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = .cs211/lib/ge211/src/CMakeFiles/ge211.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211.pdb
+  TARGET_FILE = .cs211/lib/ge211/src/libge211.a
+  TARGET_PDB = .cs211/lib/ge211/src/libge211.pdb
+
+
+#############################################
+# Utility command for test
+
+build .cs211/lib/ge211/src/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/src/test: phony .cs211/lib/ge211/src/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build .cs211/lib/ge211/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build .cs211/lib/ge211/src/edit_cache: phony .cs211/lib/ge211/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build .cs211/lib/ge211/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/zhao/Desktop/211 C++/2048_final_project" -B"/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/src/rebuild_cache: phony .cs211/lib/ge211/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build .cs211/lib/ge211/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build .cs211/lib/ge211/src/CMakeFiles/install.util: CUSTOM_COMMAND .cs211/lib/ge211/src/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/src/install: phony .cs211/lib/ge211/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build .cs211/lib/ge211/src/CMakeFiles/install/local.util: CUSTOM_COMMAND .cs211/lib/ge211/src/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/src/install/local: phony .cs211/lib/ge211/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build .cs211/lib/ge211/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND .cs211/lib/ge211/src/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/src/install/strip: phony .cs211/lib/ge211/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target fireworks
+
+
+#############################################
+# Order-only phony target for fireworks
+
+build cmake_object_order_depends_target_fireworks: phony || cmake_object_order_depends_target_ge211
+
+build .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/fireworks.cxx.o: CXX_COMPILER__fireworks_Debug /Users/zhao/Desktop/211$ C++/2048_final_project/.cs211/lib/ge211/example/fireworks.cxx || cmake_object_order_depends_target_fireworks
+  DEP_FILE = .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/fireworks.cxx.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -pedantic-errors -std=c++14
+  INCLUDES = -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/.cs211/lib/ge211/src/../include" -isystem "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src/../include" -isystem /opt/homebrew/include/SDL2
+  OBJECT_DIR = .cs211/lib/ge211/example/CMakeFiles/fireworks.dir
+  OBJECT_FILE_DIR = .cs211/lib/ge211/example/CMakeFiles/fireworks.dir
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/
+  TARGET_PDB = .cs211/lib/ge211/example/fireworks.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target fireworks
+
+
+#############################################
+# Link the executable .cs211/lib/ge211/example/fireworks
+
+build .cs211/lib/ge211/example/fireworks: CXX_EXECUTABLE_LINKER__fireworks_Debug .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/fireworks.cxx.o | .cs211/lib/ge211/src/libge211.a /opt/homebrew/lib/libSDL2.dylib /opt/homebrew/lib/libSDL2_image.dylib /opt/homebrew/lib/libSDL2_mixer.dylib /opt/homebrew/lib/libSDL2_ttf.dylib || .cs211/lib/ge211/src/libge211.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
+  LINK_LIBRARIES = .cs211/lib/ge211/src/libge211.a  /opt/homebrew/lib/libSDL2.dylib  -framework Cocoa  /opt/homebrew/lib/libSDL2_image.dylib  /opt/homebrew/lib/libSDL2_mixer.dylib  /opt/homebrew/lib/libSDL2_ttf.dylib
+  OBJECT_DIR = .cs211/lib/ge211/example/CMakeFiles/fireworks.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/
+  TARGET_FILE = .cs211/lib/ge211/example/fireworks
+  TARGET_PDB = .cs211/lib/ge211/example/fireworks.pdb
+
+
+#############################################
+# Utility command for test
+
+build .cs211/lib/ge211/example/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/example/test: phony .cs211/lib/ge211/example/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build .cs211/lib/ge211/example/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build .cs211/lib/ge211/example/edit_cache: phony .cs211/lib/ge211/example/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build .cs211/lib/ge211/example/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/zhao/Desktop/211 C++/2048_final_project" -B"/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/example/rebuild_cache: phony .cs211/lib/ge211/example/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build .cs211/lib/ge211/example/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build .cs211/lib/ge211/example/CMakeFiles/install.util: CUSTOM_COMMAND .cs211/lib/ge211/example/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/example/install: phony .cs211/lib/ge211/example/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build .cs211/lib/ge211/example/CMakeFiles/install/local.util: CUSTOM_COMMAND .cs211/lib/ge211/example/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/example/install/local: phony .cs211/lib/ge211/example/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build .cs211/lib/ge211/example/CMakeFiles/install/strip.util: CUSTOM_COMMAND .cs211/lib/ge211/example/all
+  COMMAND = cd "/Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build .cs211/lib/ge211/example/install/strip: phony .cs211/lib/ge211/example/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build catch: phony .cs211/lib/catch/libcatch.a
+
+build fireworks: phony .cs211/lib/ge211/example/fireworks
+
+build ge211: phony .cs211/lib/ge211/src/libge211.a
+
+build libcatch.a: phony .cs211/lib/catch/libcatch.a
+
+build libge211.a: phony .cs211/lib/ge211/src/libge211.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug
+
+build all: phony game model_test
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/catch
+
+build .cs211/lib/catch/all: phony .cs211/lib/catch/libcatch.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211
+
+build .cs211/lib/ge211/all: phony .cs211/lib/ge211/src/all .cs211/lib/ge211/example/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp
+
+build .cs211/lib/ge211/3rdparty/utf8-cpp/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/example
+
+build .cs211/lib/ge211/example/all: phony .cs211/lib/ge211/example/fireworks
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/zhao/Desktop/211 C++/2048_final_project/cmake-build-debug/.cs211/lib/ge211/src
+
+build .cs211/lib/ge211/src/all: phony .cs211/lib/ge211/src/libge211.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../.cs211/cmake/211commands.cmake ../.cs211/cmake/211helpers.cmake ../.cs211/cmake/CMakeLists.txt ../.cs211/lib/catch/CMakeLists.txt ../.cs211/lib/ge211/3rdparty/utf8-cpp/CMakeLists.txt ../.cs211/lib/ge211/CMakeLists.txt ../.cs211/lib/ge211/cmake/FindSDL2.cmake ../.cs211/lib/ge211/cmake/FindSDL2_image.cmake ../.cs211/lib/ge211/cmake/FindSDL2_mixer.cmake ../.cs211/lib/ge211/cmake/FindSDL2_ttf.cmake ../.cs211/lib/ge211/cmake/Ge211Installer.cmake ../.cs211/lib/ge211/example/CMakeLists.txt ../.cs211/lib/ge211/include/ge211_version.hxx.in ../.cs211/lib/ge211/src/CMakeLists.txt ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../.cs211/cmake/211commands.cmake ../.cs211/cmake/211helpers.cmake ../.cs211/cmake/CMakeLists.txt ../.cs211/lib/catch/CMakeLists.txt ../.cs211/lib/ge211/3rdparty/utf8-cpp/CMakeLists.txt ../.cs211/lib/ge211/CMakeLists.txt ../.cs211/lib/ge211/cmake/FindSDL2.cmake ../.cs211/lib/ge211/cmake/FindSDL2_image.cmake ../.cs211/lib/ge211/cmake/FindSDL2_mixer.cmake ../.cs211/lib/ge211/cmake/FindSDL2_ttf.cmake ../.cs211/lib/ge211/cmake/Ge211Installer.cmake ../.cs211/lib/ge211/example/CMakeLists.txt ../.cs211/lib/ge211/include/ge211_version.hxx.in ../.cs211/lib/ge211/src/CMakeLists.txt ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
